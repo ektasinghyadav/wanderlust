@@ -1,0 +1,38 @@
+<% layout("layouts/boilerplate") %>
+
+<div class="row justify-content-center">
+  <div class="col-md-7">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body p-4">
+        <h2 class="fw-bold mb-4">Create a New Listing</h2>
+        <form action="/listings" method="POST" enctype="multipart/form-data">
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Title</label>
+            <input type="text" class="form-control" name="listing[title]" required />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Description</label>
+            <textarea class="form-control" name="listing[description]" rows="3"></textarea>
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Image</label>
+            <input type="file" class="form-control" name="listing[image]" accept="image/*" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Price per Night (&#8377;)</label>
+            <input type="number" class="form-control" name="listing[price]" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label fw-semibold">Location</label>
+            <input type="text" class="form-control" name="listing[location]" />
+          </div>
+          <div class="mb-4">
+            <label class="form-label fw-semibold">Country</label>
+            <input type="text" class="form-control" name="listing[country]" />
+          </div>
+          <button type="submit" class="btn btn-danger w-100">Create Listing</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

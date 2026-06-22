@@ -1,0 +1,37 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(powershell -Command \"Select-String -Path instructions.md -Pattern 'Module 1[0-9]' \")",
+      "Bash(node -e ' *)",
+      "Bash(node app.js)",
+      "Bash(curl -s http://localhost:3000/listings)",
+      "Bash(curl -s http://localhost:3000/listings -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/listings/69f3ca3ae1b68438ca002e38 -o /dev/null -w \"%{http_code}\\\\n\")",
+      "Bash(curl -s http://localhost:3000/listings/69f3ca3ae1b68438ca002e38)",
+      "Bash(curl -s http://localhost:3000/listings/69f3ca3ae1b68438ca002e38 -o /tmp/show_error.html)",
+      "Read(//tmp/**)",
+      "Bash(curl -s \"http://localhost:3000/listings/69f3ca3ae1b68438ca002e38\" -o /dev/null)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist *)",
+      "Bash(/c/Windows/System32/tasklist.exe *)",
+      "Bash(/c/Windows/System32/wbem/WMIC.exe process *)",
+      "Bash(/c/Windows/System32/WindowsPowerShell/v1.0/powershell.exe *)",
+      "Bash(/c/Windows/System32/taskkill.exe //PID 29832 //F)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" http://localhost:3000/listings)",
+      "Bash(/c/Windows/System32/taskkill.exe *)",
+      "Bash(Get-Content \"C:\\\\Users\\\\LENOVO\\\\projects\\\\AirBNB_Wanderlust\\\\instructions.md\")",
+      "Bash(Measure-Object -Line)",
+      "Bash(curl *)",
+      "Bash(pkill -f \"node app.js\")",
+      "Bash(node *)",
+      "Bash(pkill -f \"3001\")",
+      "WebFetch(domain:localhost)",
+      "WebFetch(domain:127.0.0.1)",
+      "Bash(npm list *)",
+      "Bash(git remote *)",
+      "Bash(git branch *)",
+      "Bash(git push *)"
+    ]
+  }
+}
