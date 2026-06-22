@@ -3,3 +3,4 @@ node_modules/
 mongodump-backup/
 migrate.js
 reset-password.js
+.claude/
